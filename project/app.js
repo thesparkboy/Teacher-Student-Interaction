@@ -187,6 +187,11 @@ app.post('/marks',isLoggedIn, function(req, res) {
     });
 });
 
+
+app.get('/questions', isLoggedIn, function(req, res) {
+    res.render("questions");
+});
+
 //===================
 
 function isLoggedIn(req, res, next) {
@@ -196,6 +201,6 @@ function isLoggedIn(req, res, next) {
     res.redirect("/login");
 }
 
-app.listen(process.env.PORT, process.env.IP, function() {
-    console.log("server is starting  .....")
+app.listen(8080, process.env.IP, function() {
+    console.log("server is starting at" + 8080);
 });
