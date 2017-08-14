@@ -1,0 +1,24 @@
+<% include partials/header %>
+    <% include partials/tasksheader %>
+        <form action="/assignments" method="POST">
+          <div class="form-group">
+            <label >Title</label>
+            <input type="text" name="ass[title]" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>Details</label>
+            <textarea style="height:200px" name="ass[body]" type="text" class="form-control">
+                </textarea>
+          </div>
+          <div class="form-group">
+            <label>Teacher</label>
+            <input type="text" name="ass[teacher]" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>Submission Date</label>
+            <input type="text" name="ass[submissionDate]" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    <% include partials/tasksfooter %>    
+<% include partials/footer %>    

@@ -1,0 +1,20 @@
+<% include partials/header %>
+    <% include partials/tasksheader %>
+        <form action="/notices" method="POST">
+          <div class="form-group">
+            <label >Title</label>
+            <input type="text" name="notices[title]" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>Details</label>
+            <textarea style="height:200px" name="notices[body]" type="text" class="form-control">
+                </textarea>
+          </div>
+          <div class="form-group">
+            <label>Date</label>
+            <input type="text" name="notices[submissionDate]" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    <% include partials/tasksfooter %>    
+<% include partials/footer %>    

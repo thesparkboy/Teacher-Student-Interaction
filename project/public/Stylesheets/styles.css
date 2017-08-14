@@ -1,0 +1,54 @@
+body{
+    background: #159957; /* fallback for old browsers */
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(#159957), to(#155799));
+    background: -webkit-linear-gradient(to left, #159957, #155799);
+    background: -moz-linear-gradient(to left, #159957, #155799);
+    background: -o-linear-gradient(to left, #159957, #155799);
+    background: linear-gradient(to left, #159957, #155799); /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background-color: Red;
+    
+    color: white;
+}
+.tasks{
+    margin: 10px;
+    width:70%;
+    text-align: center;
+}
+#tasker{
+    width:100%;
+    margin: 0 auto;
+}
+.authentication{
+    margin:5px;
+}
+.login{
+    text-align:center; 
+}
+#home{
+    color:white;
+    text-align:center;
+}
+img{
+    margin: 0 auto;
+    margin-top: 30px;
+    display: block;
+}
+.assignment,.notice{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    margin: 2px;
+    padding: 5px;
+}
+#assignment-body{
+    color: red;
+    padding: 3px;
+}
+#files{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    color: white;
+    margin: 7px;
+    padding: 5px;
+}

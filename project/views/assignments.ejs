@@ -1,0 +1,13 @@
+<% include partials/header %>
+    <% include partials/tasksheader %>
+                <a href="/assignments/new" class="btn btn-primary">New Assignment</a>
+                <%  ass.forEach(function(assgnmt){ %>
+                    <div class="assignment">
+                        <h2><%=assgnmt.title%></h2> 
+                        <span>Submission Date - <%=assgnmt.submissionDate%></span>
+                        <p id="assignment-body"><strong><%=assgnmt.body%></strong></p>
+                        <span>Submit to - <%= assgnmt.teacher %></span>
+                    </div>
+                <%  }); %>
+    <% include partials/tasksfooter %>    
+<% include partials/footer %>

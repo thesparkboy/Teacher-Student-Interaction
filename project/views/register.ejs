@@ -1,0 +1,14 @@
+<% include partials/header %>
+    <h2 class="login">Sign Up Form</h2>
+    <form action="/register" method="POST" class="login">
+        <div class="form-group">
+            <lable><strong>Username:  </strong></lable>
+        <input style="color:black;" type="text" name="username" placeholder="username">
+        </div>
+        <div class="form-group">
+            <lable><strong>Password:  </strong></lable>
+        <input style="color:black;" type="password" name="password" placeholder="password">
+        </div>
+        <button class="btn btn-primary" href="/home">Submit</button>    
+    </form>
+<% include partials/footer %>

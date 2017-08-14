@@ -1,0 +1,12 @@
+<% include partials/header %>
+    <% include partials/tasksheader %>
+                <a href="/notices/new" class="btn btn-primary">New Notice</a>
+                <%  notices.forEach(function(notice){ %>
+                    <div class="notice">
+                        <h2><%=notice.title%></h2>
+                        <p><%=notice.body%></p>
+                        <span><%=notice.submissionDate%></span>
+                    </div>
+                <%  }); %>
+    <% include partials/tasksfooter %>    
+<% include partials/footer %>

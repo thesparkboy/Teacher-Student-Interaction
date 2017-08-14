@@ -1,0 +1,14 @@
+<% include partials/header %>
+    <% include partials/tasksheader %>
+        <h2>Upload Marks/Notice File here with Specific Name!</h2>
+        <form ref='uploadForm' id='uploadForm' action='/marks' method='post' encType="multipart/form-data">
+            <input type="file" name="sampleFile" />
+            <input type='submit' class="btn btn-success" value='Upload!' />
+        </form>
+        <%  Files.forEach(function(piles){ %>
+                    <div id="files">
+                        <h2><a style = "color:pink;" href=" <%=piles.path %>" ><%= piles.path.toString().substring(5) %></a></h2>
+                    </div>
+                <%  }); %>
+    <% include partials/tasksfooter %>
+<% include partials/footer %>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+  LEARN WITH USS
+  </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/Stylesheets/styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header pull-right authentication">
+        <% if(!currentUser){ %>
+          <a class="btn btn-primary " href="/register">Sign up</a>
+          <a class="btn btn-primary " href="/login">Login</a>
+          <% }else{ %>
+            <span style="color : black;"> Signed In as <%= currentUser.username %>  &nbsp; &nbsp;</span>
+            <a class="btn btn-primary " href="/logout">Logout</a>
+            <% } %>
+      </div>
+    </div>
+  </nav>
