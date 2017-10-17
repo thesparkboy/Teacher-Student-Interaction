@@ -27,3 +27,8 @@ It provides following services to the Teacher/Student/University.
 3. In the terminal,go to project directory and run - "node app.js"
 4. The app will start running on - "localhost:8080"
 5. Even you can use nodemon. If you are new to it just install it by using this command npm install -g nodemon.
+
+
+# Code structure can be improved
+1. improve routes folder.
+
